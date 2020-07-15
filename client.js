@@ -1,5 +1,5 @@
 //connecting to our signaling server 
-var conn = new WebSocket('ws://michu-server.herokuapp.com//socket');
+var conn = new WebSocket('wss://michu-server.herokuapp.com//socket');
 conn.onopen = function() {
     console.log("Connected to the signaling server");
     initialize();
